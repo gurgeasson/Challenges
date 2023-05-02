@@ -11,7 +11,7 @@ function reverseString(str) {
 
   for (let i = str.length - 1; i >= 0; i--) {
     // loop through the characters in the string from last to first
-    newStr += str.charAt(i); // concatenate newStr to hold characters of original string in reverse order
+    newStr += str.charAt(i); // concatenate each letter of input in reverse order to newStr
     //    newStr += str[i];
   }
   console.log(newStr);
