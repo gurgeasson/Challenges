@@ -1,29 +1,35 @@
+// User class
 class User {
-  constructor(username) {
-    this._username = username;
+  // Class constructor
+  constructor() {
+    // Initialising the _user_name variable
+    this._user_name = "";
   }
 
-  set username(new_username) {
-    this._username = new_username;
+  // Set method
+  set user_name(user_name) {
+    this._user_name = user_name;
   }
 }
 
+// Admin class that inherits from the user class
 class Admin extends User {
-  constructor(username) {
-    super(username);
-  }
-
-  expressYourRole() {
+  // express_your#_role method
+  express_your_role() {
     return "Admin";
   }
 
-  sayHello() {
-    return `Hello admin, ${this._username}`;
+  // say_hello method
+  say_hello() {
+    return `Hello admin, ${this._user_name}`;
   }
 }
 
-const admin = new Admin("");
+// Create an admin object
+let admin = new Admin();
 
-admin._username = "Balthazar";
+// Set the user name to "Balthazar"
+admin._user_name = "Balthazar";
 
-console.log(admin.sayHello());
+// Show info to the user
+console.log(admin.say_hello());
