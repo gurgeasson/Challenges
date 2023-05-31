@@ -64,7 +64,7 @@ def secret_number_game():
         else:
             # The guess matches the secret number
             print(f"You answered {guess}. This is the correct answer!")
-            # Exit while loop
+            # Exit 'secret_number_game()'
             return
         
         # Increment 'num_guesses' by 1 
