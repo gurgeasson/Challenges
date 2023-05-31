@@ -1,6 +1,6 @@
 # Secret number - a short game to guess a secret number.
 
-# The brief:
+# The Brief:
 # 1. Generates a random number.
 # 2. Takes in a guess.
 # 3. Returns a string with the guess and whether that guess is lower or higher than the random number.
@@ -8,18 +8,23 @@
 # 4. If the guess matches the random number, then return a string which confirms this.
 #    E.g., “You answered 9. This is the correct answer!”
 
-# My Assumptions
+# My Assumptions:
 # 1. The range is 1 to 100, whole numbers.
 # 2. The input must be within this range (whole numbers).
 # 3. I pick python as my preferred language as I'm comfortable with it, and is convenient to run and debug in VSCode
 # 4. The presentation is simple, the program runs in terminal.
 #    Instructions, the input and the outcome of the game all presented text based, just like in the days of old.
+# 5. Due to limited time some function will not be implemented, I'll list these under 'For Future Releases'
 
-# Testing
+# Testing:
 # Once the program finished i'll test and confirm that:
 # 1. it runs
 # 2. the input - negative numbers, strings, numbers over 100 and below 1, floats
 # 3. scenarios like I take too many guesses, I guess the number in less than 7 attempts
+
+# For Future Releases:
+# In case the player fails to guess within 7 attempts, be nice and tell them what the random number was.
+# It's not necessarely easy to keep track of the remaining guesses, to tell this to the player would be usefull.
 
 # Load random module
 import random
