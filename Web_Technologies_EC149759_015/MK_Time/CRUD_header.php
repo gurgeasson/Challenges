@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MK Time</title>
+  <title>MK Time - CRUD</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
@@ -16,7 +16,7 @@
 
 </head>
 <body>
-
+  
 <!-- HEADER -->
 <header class="p-3 text-bg-dark">
   <div class="container">
@@ -26,15 +26,14 @@
       </a>
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="./index.php" class="nav-link px-2 text-white">Home</a></li>
-        <li><a href="./products.php" class="nav-link px-2 text-white">Products</a></li>
-        <li><a href="./about.php" class="nav-link px-2 text-white">About</a></li>
+        <li><a href="./CRUD_create.php" class="nav-link px-2 text-white">Create</a></li>
+        <li><a href="./CRUD_home.php" class="nav-link px-2 text-white">Read</a></li>
       </ul>
 
       <div class="text-end">
         <?php
           if (!isset($_SESSION['user_id'])) {
-            echo '<a class="btn btn-outline-light me-2" href="./USER_login.php" role="button">Login</a>
+            echo '<a class="btn btn-outline-light me-2" href="./includes/USER_logout.inc.php" role="button">Login</a>
             <a class="btn btn-warning" href="./USER_register.php">Sign-up</a>';
           }
           else {
@@ -42,7 +41,6 @@
             <a class="btn btn-warning" href="./basket.php">Basket</a>';
           }
         ?>
-      </div>
     </div>
   </div>
 </header>
