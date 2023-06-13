@@ -1,4 +1,7 @@
-  <?php include('./header.php') ?>
+  <?php
+    $pageTitle = 'Login';
+    include('header.php');
+  ?>
 
   <main>
 

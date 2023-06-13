@@ -1,4 +1,7 @@
-  <?php include('header.php'); ?>
+  <?php
+    $pageTitle = 'Home';
+    include('header.php');
+  ?>
 
   <main>
     <div class="container">
@@ -52,4 +55,4 @@
     <h1 class="align-items-center justify-content-center">MK Time - The fictional company designing and manufacturing Swiss watches in Edinburgh</h1>
   </div>
 
-  <?php include('footer.php'); ?>
+  <?php include('./footer.php'); ?>

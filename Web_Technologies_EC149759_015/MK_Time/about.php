@@ -1,4 +1,7 @@
-  <?php include('header.php') ?>
+  <?php
+    $pageTitle = 'About';
+    include('header.php');
+  ?>
 
   <main>
 

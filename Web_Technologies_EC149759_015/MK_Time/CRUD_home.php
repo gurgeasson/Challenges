@@ -1,4 +1,8 @@
-  <?php include('./CRUD_header.php') ?>
+  <?php
+    $CRUD = TRUE;
+    $pageTitle = 'CRUD Home';
+    include('./header.php');
+  ?>
 
   <div class="container my-5">
     <h1>Products List</h1>
@@ -13,8 +17,8 @@
         <th></th>
       </tr>
 
-    <?php include('./includes/CRUD_read.inc.php') ?>
+    <?php include('./includes/CRUD_read.inc.php'); ?>
     </table>
   </div>
 
-  <?php include('./footer.php') ?>
+  <?php include('./footer.php'); ?>

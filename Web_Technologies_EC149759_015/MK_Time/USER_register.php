@@ -1,4 +1,7 @@
-  <?php include('./header.php') ?>
+  <?php
+    $pageTitle = 'Register';
+    include('header.php');
+  ?>
 
   <main>
 

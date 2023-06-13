@@ -4,15 +4,19 @@
 
   $id = $_GET['id'];
   $sql = "SELECT * FROM items_view WHERE item_id = $id";
-  $result = mysqli_query($link, $sql);
+  $result = mysqli_query($conn, $sql);
   $row = mysqli_fetch_assoc($result);
 
   # Close database connection.
   mysqli_close($conn);
 ?>
 
-  <?php include('./CRUD_header.php') ?>
-      
+  <?php
+    $CRUD = TRUE;
+    $pageTitle = 'CRUD Update';
+    include('./header.php');
+  ?>
+
   <div class="container my-5">
     <h1>Update Product</h1>
     <form method="POST">

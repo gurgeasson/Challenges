@@ -1,4 +1,8 @@
-  <?php include('./CRUD_header.php') ?>
+  <?php
+    $CRUD = TRUE;
+    $pageTitle = 'CRUD Create';
+    include('./header.php');
+  ?>
 
   <main>
 
