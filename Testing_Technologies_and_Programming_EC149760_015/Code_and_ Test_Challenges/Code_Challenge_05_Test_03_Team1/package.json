@@ -1,0 +1,22 @@
+{
+  "name": "code-challenge-5---test-challenge-3",
+  "version": "1.0.0",
+  "description": "Benjamin & Gyorgy",
+  "main": "shoppingList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EC-CodeSpace-0002/Code-Challenge-5---Test-Challenge-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EC-CodeSpace-0002/Code-Challenge-5---Test-Challenge-3/issues"
+  },
+  "homepage": "https://github.com/EC-CodeSpace-0002/Code-Challenge-5---Test-Challenge-3#readme",
+  "devDependencies": {
+    "cypress": "^12.14.0"
+  }
+}
